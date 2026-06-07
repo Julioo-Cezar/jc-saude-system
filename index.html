@@ -6,41 +6,286 @@
     <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
     <title>JC Saúde System</title>
-
+<!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap ícones -->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
+<!-- Cabeçalho Superior -->
     <header>
-        <p>(61) 99999-9999 | contato@jcsaude.com</p>
+        <p><i class="bi bi-telephone text-primary"></i> (61) 99999-9999 | <i class="bi bi-envelope-at-fill text-primary"></i> contato@jcsaude.com</p>
     </header>
 
-    <nav class="bg-primary text-white p-3">
+<!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+
         <div class="container">
-          <h1>JC Saúde</h1>
+
+          <a class="navbar-brand"href="#inicio">
+            <i class="bi bi-hospital"></i>
+            JC Saude</a>
+          <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse"
+          id="menu">
+
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link"href="#inicio">Início</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#especialidades">Especialidades</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#convenios">Convênios</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn btn-success ms-2" href="#agendamento">Agendar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+
+          </ul>
         </div>
+      </div>
     </nav>
 
     <main>
 
-        <section>
-            <h2>Cuidar de você é a nossa missão</h2>
-            <p>Atendimento humanizado, rápido e acessível.</p>
+<!-- Hero Section -->
+        <section id="inicio" class="py-5 bg-light">
+          <div class="container">
+
+             <div class="row align-items-center">
+
+                <div class="col-md-5">
+
+                  <h2 class="display-4">Cuidar da sua saúde é nossa prioridade</h2>
+
+                  <p class="lead">Atendimento humanizado, rápido e acessível para toda a família.</p>
+
+                  <button class="btn btn-primary">Agendar Consulta</button>
+
+                  <button class="btn btn-success">WhatsApp</button>
+
+                </div>
+
+                <div class="col-md-7">
+
+                    <img src="img/Image 600x400.png"
+                    class="img-fluid rounded shadow w-100"
+                    alt="imagem da clínica">
+
+                </div>
+
+             </div>
+
+          </div>
         </section>
 
+<!-- Nossos Diferenciais -->
         <section>
+          <div class="container">
+
             <h2>Nossos diferenciais</h2>
+
+            <div class="row">
+            
+                <div class="col-md-3 mb-3">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      Atendimento Humanizado
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      Preços Acessíveis
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      Agilidade
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      Profissionais qualificados
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+        </section>
+<!-- Especialidades Médicas -->
+
+        <section id="especialidades" class="py-5">
+          <div class="container">
+
+            <h2 class="text-center mb-5">Especialidades Médicas</h2>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4><i class="bi bi-person-heart text-primary"></i> Clínica Geral</h4>
+                            <p>Atendimento clinico completo para adultos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4><i class="bi bi-heart-pulse-fill text-primary"></i> Cardiologia</h4>
+                            <p>Cuidados especializados para a saúde do coração.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4><i class="bi bi-emoji-smile-fill text-primary"></i> Pediatria</h4>
+                            <p>Atendimento infantil com foco no bem-estar das crianças.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4><i class="bi bi-bandaid-fill text-primary"></i> Ortopedia</h4>
+                            <p>Tratamento e prevenção de problemas musculares e ósseos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4><i class="bi bi-gender-female text-primary"></i> Ginecologia</h4>
+                            <p>Acompanhamento da saúde da mulher.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4><i class="bi bi-droplet-fill text-primary"></i> Dermatologia</h4>
+                            <p>Cuidados com a pele, cabelos e unhas.</p>
+                        </div>
+                    </div>
+                </div>
+
+             </div>
+
+          </div>
         </section>
 
-        <section>
-            <h2>Especialidades</h2>
+<!-- Convênios aceitos -->        
+        <section id="convenios" class="py-5 bg-light">
+          <div class="container">
+            <h2 class="text-center mb-5">Convênios Aceitos</h2>
+
+            <div class="row g-4">
+
+              <div class="col-md-4">
+                <div class="card text-center p-4">
+                  <h5><i class="bi bi-hospital text-primary"></i> Unimed</h5>
+                </div>
+              </div>
+
+               <div class="col-md-4">
+                <div class="card text-center p-4">
+                  <h5><i class="bi bi-hospital text-primary"></i> Bradesco Saúde</h5>
+               </div>
+             </div>
+
+              <div class="col-md-4">
+                <div class="card text-center p-4">
+                  <h5><i class="bi bi-hospital text-primary"></i> Amil</h5>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card text-center p-4">
+                  <h5><i class="bi bi-hospital text-primary"></i> SuLamérica</h5>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card text-center p-4">
+                  <h5><i class="bi bi-hospital text-primary"></i> Hapvida</h5>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card text-center p-4">
+                  <h5><i class="bi bi-person-check text-success"></i> Particular</h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </section>
 
+<!-- Agendamento -->        
+        <section id="agendamento" class="py-5 text-center">
+  
+          <div class="container">
+
+            <h2 class="mb-4">Agende sua Consulta Hoje!</h2>
+
+            <p class="lead mb-4">Atendimento rápido, humanizado e acessível para toda a família.</p>
+
+            <a href="#" class="btn btn-success btn-lg">
+              <i>Falar no WhatsApp</i>
+            </a>
+          </div>     
+        </section>
     </main>
 
-    <footer>
-        <p>JC Saúde System</p>
+<!-- Rodapé -->
+    <footer id="contato" class="bg-primary text-white py-4">
+      
+      <div class="container text-center">
+
+        <h5>JC Saúde System</h5>
+
+        <p>Atendimento humanizado para toda a família.</p>
+
+        <p><i class="bi bi-telephone"></i> (61) 99999-9999</p>
+
+        <p><i class="bi bi-envelope-at-fill"></i> contato@jcsaude.com</p>
+
+      </div>
     </footer>
 
 </body>
