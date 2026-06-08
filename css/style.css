@@ -1,3 +1,18 @@
+/* Navegação */
 html {
     scroll-behavior: smooth;
+}
+
+/* Efeito Hover dos Cards */
+.card {transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Efeito Hover dos Botões */
+.btn:hover {
+    transform: translateY(-3px);
 }
