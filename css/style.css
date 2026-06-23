@@ -10,9 +10,79 @@ html {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    background-color: #28a745;
+    color: white;
 }
 
 /* Efeito Hover dos Botões */
 .btn:hover {
-    transform: translateY(-3px);
+    color: white !important;
+}
+
+
+/* Cabeçalho Superior */
+header {
+    height: 40px;
+    background-color: #c1e6d5;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header i:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #0d6efd;
+}
+
+/* Menu Fixo */
+.navbar.fixed-top {
+top: 40px;
+}
+
+.navbar-nav .nav-link {
+    font-family: 1.2rem;
+    font-weight: 500;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+body {
+    padding-top: 100px;
+}
+
+/* Botão Flutuante WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #25D366;
+    color: white;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: white;
 }
