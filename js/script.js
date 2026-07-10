@@ -18,3 +18,7 @@ window.addEventListener("scroll",function(){
 
 // Testes
 console.log("JavaScript funcionando!");
+
+// Ano automático do rodapé
+const ano= document.getElementById("ano");
+ano.textContent= new Date().getFullYear();

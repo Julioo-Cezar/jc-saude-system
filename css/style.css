@@ -10,7 +10,7 @@ html {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    background-color: #28a745;
+    background-color: #74e08b;
     color: white;
 }
 
@@ -23,7 +23,7 @@ html {
 /* Cabeçalho Superior */
 header {
     height: 40px;
-    background-color: #c1e6d5;
+    background-color: #c1d2e6;
     padding: 8px 15px;
     display: flex;
     justify-content: space-between;
@@ -33,6 +33,9 @@ header i:hover {
     cursor: pointer;
     transition: 0.3s;
     color: #0d6efd;
+}
+.navbar {
+    background-color: #517cd8;
 }
 
 /* Menu Fixo */
@@ -106,8 +109,9 @@ body {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 35);
 }
 .carousel-caption p {
-    color: #0d6efd;
-    font-size: 1.2rem;
+    color: #c6cfdb;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 /* Indicadores do Carousel */
@@ -120,6 +124,22 @@ body {
 .carousel-control-prev-icon, .carousel-control-next-icon {
     width: 50px;
     height: 50px;
+}
+/* Camada escura do Carousel */
+.carousel-item {
+    position: relative;
+}
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+.carousel-caption {
+    z-index: 2;
 }
 
 /* Cards abaixo do Carousel */
@@ -197,4 +217,138 @@ header.esconder {
 }
 .navbar.subir {
     top: 0 !important;
+}
+
+/* Rodapé */
+.footer-jc {
+    background: linear-gradient(135deg,#517cd8,#517cd8);
+}
+.footer-jc h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer-jc p {
+    color: #dfe9ff;
+    line-height: 1.8;
+}
+.footer-jc ul {
+    padding: 0;
+}
+.footer-jc ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+.footer-jc a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-jc a:hover {
+    color: #7ee787;
+    padding-left: 8px;
+}
+.footer-jc hr {
+    border-color: rgba(255, 255, 255, .25);
+}
+.footer-jc img {
+    margin-bottom: 20px;
+}
+/* Especialidades Médicas */
+.linha-titulo {
+width: 90px;
+height: 4px;
+background: #0d6efd;
+margin: 10px auto 25px;
+border-radius: 10px;
+}
+/* Cards das Especialidades */
+.card-especialidade {
+    position: relative;
+    background: #f3f9ff;
+    border-radius: 20px;
+    padding: 35px 25px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0,0.8);
+    transition: .35s;
+    border: 2px solid #0d6efd;
+}
+.card-especialidade:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0,.18);
+}
+.icone-especialidade {
+    width: 80px;
+    height: 80px;
+    background: #0d6efd;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 25px;
+    font-size: 35px;
+}
+.card-especialidade h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.card-especialidade p {
+    color: #666;
+    margin-bottom: 25px;
+    min-height: 70px;
+}
+/* Marca d´água dos Cards */
+.card-especialidade::before {
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 300px;
+height: 300px;
+background-image: var(--watermark);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+opacity: 0.15;
+z-index: 0;
+}
+.card-especialidade>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* Parallax- Página de Contato */
+.parallax-contato {
+    background-image: url("../img/parallax-contato.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parallax-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 110, 253, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+}
+.parallax-overlay h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.parallax-overlay p {
+    color: #fff;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
 }
