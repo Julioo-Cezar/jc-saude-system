@@ -1,7 +1,7 @@
 /* ====JC Saúde System JavaScript Principal=== */
 // Seleciona a barra de navegação
 const navbar=document.querySelector(".navbar");
-const header=document.querySelector(".header");
+const header=document.querySelector("header");
 
 // Escuta a rolagem da página
 window.addEventListener("scroll",function(){
@@ -47,16 +47,15 @@ const iniciarcontador=()=>{
             atualizar();
           });
         };
-        const secaoSobre=
-        document.querySelector("#sobre");
-        const observer= new
-        IntersectionObserver((entries)=> {
-if (entries[0].isIntersecting) {
-    iniciarcontador();
-    observer.disconnect();
+        const secaoSobre = document.querySelector("#sobre");
+        const observer= new IntersectionObserver((entries)=> {
+           if (entries[0].isIntersecting) {
+             iniciarcontador();
+             observer.disconnect();
           }
-
-        },{
+        }, {
             threshold:0.5
-    });
-observer.observe(secaoSobre);
+        });
+        if (secaoSobre) {    
+       observer.observe(secaoSobre);
+        }

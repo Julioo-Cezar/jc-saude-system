@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport"
      content="width=device-width, initial-scale=1.0">
     <title>JC Saúde System</title>
     
-<!-- Bootstrap -->
+   <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap ícones -->    
+   <!-- Bootstrap ícones -->    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-<!-- CSS Personalizado -->
-<link rel="stylesheet" href="css/style.css">
-</head>
+   <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+ </head>
 
-<body>
+ <body>                                      
 
   <!-- Botão Flutuante WhatsApp --> 
     <a href="https://wa.me/5561999999999" 
@@ -26,7 +26,7 @@
        <i class="bi bi-whatsapp"></i>
     </a>
     
-<!-- Cabeçalho Superior -->
+  <!-- Cabeçalho Superior -->
     <header>
         <div>
           <i class="bi bi-telephone text-primary">
@@ -41,7 +41,7 @@
         </div>
     </header>
 
-<!-- Navbar Barra de Navegação -->
+  <!-- Navbar Barra de Navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
         <div class="container-fluid">
@@ -97,31 +97,31 @@
       </div>
     </nav>
 
-<!-- Carousel Principal -->
- <section id="inicio">
- <div id="carouselJC" class="carousel slide carousel-fade"
+  <!-- Carousel Principal -->
+   <section id="inicio">
+    <div id="carouselJC" class="carousel slide carousel-fade"
       data-bs-ride="carousel" 
       data-bs-interval="5000" 
       data-bs-pause="hover">
-  <div class="carousel-indicators">
-    <button type="button" 
+     <div class="carousel-indicators">
+     <button type="button" 
             data-bs-target="#carouselJC" 
             data-bs-slide-to="0" 
             class="active" 
             aria-current="true">
-    </button>
-    <button type="button" 
+     </button>
+     <button type="button" 
             data-bs-target="#carouselJC" 
             data-bs-slide-to="1">
-    </button>
-    <button type="button" 
+     </button>
+     <button type="button" 
             data-bs-target="#carouselJC" 
             data-bs-slide-to="2">
-    </button>
-  </div>
+     </button>
+     </div>
 
-  <div class="carousel-inner">
-    <div class="carousel-item active">
+     <div class="carousel-inner">
+     <div class="carousel-item active">
       <img src="img/banner1.png" class="d-block w-100" 
            alt="Consulta Médica">
            <div class="carousel-overlay"></div>
@@ -134,9 +134,9 @@
               <i class="bi bi-calendar-check"></i> Agendar consulta
             </a>
       </div>
-  </div>
+     </div>
 
-    <div class="carousel-item">
+     <div class="carousel-item">
       <img src="img/banner2.png" class="d-block w-100" 
            alt="Consultas e Exames">
            <div class="carousel-overlay"></div>
@@ -145,9 +145,9 @@
            <p>Realizamos consultas e exames com qualidade, rapidez e tecnologia.
            </p>
         </div>
-    </div>
+     </div>
 
-    <div class="carousel-item">
+     <div class="carousel-item">
       <img src="img/banner3.png" class="d-block w-100" 
            alt="Conheça a JC Sáude">
            <div class="carousel-overlay"></div>
@@ -157,63 +157,63 @@
              com excelência, segurança e atendimento humanizado
            </p>
         </div>
-    </div>
-  </div>
+     </div>
+     </div>
 
-  <button class="carousel-control-prev" 
+     <button class="carousel-control-prev" 
           type="button" 
           data-bs-target="#carouselJC" 
           data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" 
+     </button>
+     <button class="carousel-control-next" 
           type="button" 
           data-bs-target="#carouselJC" 
           data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
-  </button>
- </div>
- </section>
+     </button>
+     </div>
+   </section>
 
-<!-- Cards abaixo do Carousel -->
- <section class="cards-home container">
-  <div class="row">
-  <div class="col-md-4 mb-4">
-    <div class="card card-home shadow">
+  <!-- Cards abaixo do Carousel -->
+   <section class="cards-home container">
+     <div class="row">
+     <div class="col-md-4 mb-4">
+     <div class="card card-home shadow">
       <i class="bi bi-calendar-check"></i>
       <h3>Agendamentos</h3>
       <p>Agende sua consulta com rapidez, conforto e praticidade.
       </p>
       <a href="#contato">Agende Agora</a>
-    </div>
-  </div>
+     </div>
+     </div>
 
-  <div class="col-md-4 mb-4">
-    <div class="card card-home shadow">
-      <i class="bi bi-heart-pulse"></i>
+     <div class="col-md-4 mb-4">
+     <div class="card card-home shadow">
+       <i class="bi bi-heart-pulse"></i>
       <h3>Especialidades</h3>
       <p>Diversas especialidades médicas para cuidar da sua saúde.
       </p>
       <a href="#especialidades">Conheça</a>
-    </div>
-  </div>
+     </div>
+     </div>
 
-  <div class="col-md-4 mb-4">
-    <div class="card card-home shadow">
+     <div class="col-md-4 mb-4">
+     <div class="card card-home shadow">
       <i class="bi bi-hospital"></i>
       <h3>Convênios</h3>
       <p>Trabalhamos com diversos convênios e atendimento particular.
       </p>
-      <a href="#convenios">Ver Convênios</a>
-    </div>
-  </div>
+       <a href="#convenios">Ver Convênios</a>
+     </div>
+     </div>
 
-  </div>
- </section>
+     </div>
+   </section>
     <main>
 
-<!-- Hero Section -->
-        <section class="hero-section py-5">
+  <!-- Hero Section -->
+   <section class="hero-section py-5">
           <div class="container text-center">
 
                   <h2>Conheça a JC Saúde</h2>
@@ -225,10 +225,10 @@
                   </p>
 
                 </div>
-        </section>
+   </section>
 
-<!-- Nossos Diferenciais -->
-        <section>
+  <!-- Nossos Diferenciais -->
+   <section>
           <div class="container">
 
             <h2>Nossos diferenciais</h2>
@@ -274,10 +274,10 @@
             </div>
 
           </div>
-        </section>
+   </section>
 
-<!-- Especialidades Médicas -->
-        <section id="especialidades" class="py-5">
+  <!-- Especialidades Médicas -->
+   <section id="especialidades" class="py-5">
           <div class="container">
 
            <div class="text-center mb-5">
@@ -408,9 +408,9 @@
                  </div>
               </div>
            </div>
-        </section>
+   </section>
     
-<!-- Sobre a clínica -->
+  <!-- Sobre a clínica -->
         <section id="sobre" class="py-5">
           <div class="container">
             <div class="row align-items-center">
@@ -455,10 +455,10 @@
           </div>
         </section>  
         
-<!-- Equipe Médica -->
- <section id="equipe" class="py-5 bg-light">
-  <div class="container">
-    <div class="text-center mb-5">
+  <!-- Equipe Médica -->
+   <section id="equipe" class="py-5 bg-light">
+     <div class="container">
+     <div class="text-center mb-5">
       <h3 class="text-primary mb-3">
         Nossa Equipe Médica
       </h3>
@@ -471,8 +471,8 @@
          Conheça nossa equipe de especialistas altamente qualificados,
          comprometidos em oferecer um atendimento humanizado e de excelência.
         </p>
-    </div>
-    <div class="row">
+     </div>
+     <div class="row">
 
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card-medico text-center">
@@ -642,10 +642,10 @@
             </div>           
         </div>
       </div>
-  </div>
- </section>
+     </div>
+   </section>
 
-<!-- Convênios aceitos -->        
+  <!-- Convênios aceitos -->        
         <section id="convenios" class="py-5 bg-light">
           <div class="container">
             <h2 class="text-center mb-5">Convênios Aceitos</h2>
@@ -692,7 +692,7 @@
           </div>
         </section>
 
-<!-- Depoimentos -->
+  <!-- Depoimentos -->
         <section class="py-5">
 
           <div class="container">
@@ -721,8 +721,8 @@
                     Maria Silva
                   </h6>
                 </div>
+               </div>
               </div>
-            </div>
             <div class="col-md-4 mb-4">
               <div class="card h-100 shadow-sm">
                 <div class="card-body text-center">
@@ -763,14 +763,14 @@
                   <h6 class="mt-3">
                     Ana Souza
                   </h6>
-                  <div>
-                <div>
-              <div>
-            <div>
+                </div>
+              </div>
+            </div>
           </div>
+         </div>
         </section>  
 
-<!-- Agendamento -->        
+  <!-- Agendamento -->        
         <section id="agendamento" class="py-5 text-center">
   
           <div class="container">
@@ -786,7 +786,7 @@
         </section>
     </main>
 
-<!-- Rodapé -->
+  <!-- Rodapé -->
     <footer class="footer-jc text-white py-5">
       
       <div class="container">
@@ -857,9 +857,9 @@
       </div>
     </footer>
 
-<!-- Include All JS -->
+  <!-- Include All JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+ </body>
 
 </html>
