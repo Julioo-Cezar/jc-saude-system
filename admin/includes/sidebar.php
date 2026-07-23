@@ -1,6 +1,7 @@
-<div class="bg-dark text-white p-3"
+<div class="sidebar p-3"
     style="width:250px; min-height:100vh;">
 
+    <!-- Navegação principal do painel; os destinos serão definidos conforme os módulos forem criados. -->
     <h4 class="mb-4">
         JC Saúde
     </h4>

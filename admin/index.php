@@ -1,16 +1,27 @@
-<?php include'includes/header.php';?>
+<?php
+// Carrega o documento HTML, as dependências visuais e a abertura do corpo da página.
+include'includes/conexao.php';
+include'includes/header.php';
+?>
 <div class="container-fluid">
     <div class="row">
       <div class="col-md-2 p-0">
 
-         <?php include'includes/sidebar.php';?>
+         <?php
+         // Menu principal compartilhado entre as páginas administrativas.
+         include'includes/sidebar.php';
+         ?>
         </div>
         <div class="col-md-10">
-            <?php include'includes/topbar.php';?>
+            <?php
+            // Área reservada para informações da sessão do usuário e ações globais.
+            include'includes/topbar.php';
+            ?>
               <div class="container mt-4">
                     <h1 class="mb-4">
                         Painel Administrativo
                     </h1>
+              <!-- Os indicadores serão preenchidos com dados reais quando o banco de dados for integrado. -->
               <div class="row">
 
         <div class="col-md-3">
@@ -54,4 +65,7 @@
       </div>
    </div>
 </div>
-<?php include'includes/footer.php';?>
+<?php
+// Finaliza o documento HTML aberto pelo cabeçalho.
+include'includes/footer.php';
+?>

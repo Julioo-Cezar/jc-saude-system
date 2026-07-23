@@ -3,6 +3,7 @@
         <span class="navbar-brand fw-bold text-primary">
             JC Saúde System
         </span>
+        <!-- Ações vinculadas à sessão autenticada do administrador. -->
         <div class="ms-auto">
             <span class="me-3">
                 Administrador
